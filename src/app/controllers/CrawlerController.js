@@ -9,7 +9,8 @@ class CrawlerController {
     const sitemap = [];
     const crawler = new Crawler(url);
 
-    crawler.maxConcurrency = 3;
+    crawler.interval = 50;
+    crawler.maxConcurrency = 10;
     crawler.stripQuerystring = true;
     crawler.maxDepth = 3;
 
